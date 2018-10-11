@@ -1,6 +1,7 @@
-@media (min-width) {
-    .navbar-header {
-        float: left;
-    }
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #1e3f5a;
+    width: 100%;
 }
-

@@ -1,25 +1,40 @@
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
-    <div class="container">
-        <a class="navbar-brand" [routerLink]="['/']">UPnGOAds</a>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
-                    <a class="nav-link" [routerLink]="['/dashboard']">Dashboard</a>
-                </li>
-                <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
-                    <a class="nav-link" [routerLink]="['/profile']">Profile</a>
-                </li>
-                <li *ngIf="!authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
-                    <a class="nav-link" [routerLink]="['/login']">Login</a>
-                </li>
-                <li *ngIf="!authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
-                    <a class="nav-link" [routerLink]="['/register']">Register</a>
-                </li>
-                <li *ngIf="authService.loggedIn()" class="nav-item">
-                    <a class="nav-link" href="#" (click)="onLogoutClick()">Logout</a>
-                </li>
-            </ul>
-        </div>
+<div class="container-fluid" style="padding-right: 0px;
+    padding-left: 0px;
+    "></div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">UPnGOAds</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../home/home.component.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#card">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+        Products
+    </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Features</a>
+                    <a class="dropdown-item" href="#">Pricing</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Contact</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:4200/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=".http://localhost:4200/signup">Register</a>
+            </li>
+        </ul>
     </div>
 </nav>
