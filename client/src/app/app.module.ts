@@ -21,6 +21,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
+import { PricingComponent } from './pricing/pricing.component';
+
 
 
 
@@ -35,6 +37,8 @@ import { CardComponent } from './card/card.component';
     NavbarComponent,
     FooterComponent,
     CardComponent,
+    PricingComponent,
+
 
   ],
   imports: [

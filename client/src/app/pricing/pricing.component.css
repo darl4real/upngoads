@@ -1,0 +1,37 @@
+ul li {
+    list-style-type: none;
+    float: left;
+    width: 25%;
+}
+
+ul:hover li {
+    width: 10%;
+}
+
+ul:hover li figure {
+    position: relative;
+}
+
+ul:hover li figure figcaption {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    display: none;
+}
+
+ul li:hover {
+    width: 70%;
+}
+
+ul li:hover figure figcaption {
+    display: block;
+    font-size: 40px;
+    color: tomato
+}
+
+ul,
+ul:hover,
+ul li,
+ul li:hover {
+    transition: all ease-out 0.3s;
+}

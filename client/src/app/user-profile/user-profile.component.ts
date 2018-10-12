@@ -16,9 +16,9 @@ export class UserProfileComponent implements OnInit {
       res => {
         this.userDetails = res['user'];
       },
-      err => { 
+      err => {
         console.log(err);
-        
+
       }
     );
   }
