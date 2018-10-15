@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: row wrap;
     flex-direction: inherit;
-    margin-left: 30px;
+    margin-left: 40px;
     justify-content: center;
     /* Adjustment for the gutter */
     width: 100%;
@@ -17,7 +17,7 @@
 
 .section-box-one {
     height: 250px;
-    background: radial-gradient(#6e6e6e, #2f2f2f);
+    background: radial-gradient(#121921, #2f2f2f);
     background: -webkit-radial-gradient(#6e6e6e, #2f2f2f);
     background: -moz-radial-gradient(#6e6e6e, #2f2f2f);
     color: #fff;

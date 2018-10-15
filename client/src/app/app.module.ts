@@ -15,6 +15,7 @@ import { UserService } from './shared/user.service';
 //other
 import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.interceptor';
+import { PartnerComponent } from './partner/partner.component';
 
 
 
@@ -23,7 +24,8 @@ import { AuthInterceptor } from './auth/auth.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    PartnerComponent
 
   ],
   imports: [
