@@ -25,7 +25,8 @@ import { PartnerComponent } from './partner/partner.component';
   declarations: [
     AppComponent,
     routingComponents,
-    PartnerComponent
+    PartnerComponent,
+
 
   ],
   imports: [
