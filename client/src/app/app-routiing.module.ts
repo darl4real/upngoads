@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { ServiceComponent } from './service/service.component';
 import { UserComponent } from './user/user.component';
 import { SignUpComponent } from './user/sign-up/sign-up.component';
 import { SignInComponent } from './user/sign-in/sign-in.component';
@@ -28,6 +29,9 @@ const routes: Routes = [
     path: 'pricing', component: PricingComponent
   },
   {
+    path: 'service', component: ServiceComponent
+  },
+  {
     path: 'signup', component: UserComponent,
     children: [{ path: '', component: SignUpComponent }]
   },
@@ -45,4 +49,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
-export const routingComponents = [CardComponent, FooterComponent, HomeComponent, NavbarComponent, PricingComponent, UserComponent, SignUpComponent, SignInComponent, UserProfileComponent ]
+export const routingComponents = [CardComponent, FooterComponent, HomeComponent, NavbarComponent, PricingComponent, ServiceComponent, UserComponent, SignUpComponent, SignInComponent, UserProfileComponent ]

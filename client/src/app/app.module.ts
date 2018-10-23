@@ -16,6 +16,7 @@ import { UserService } from './shared/user.service';
 import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { PartnerComponent } from './partner/partner.component';
+import { ServiceComponent } from './service/service.component';
 
 
 
@@ -26,6 +27,7 @@ import { PartnerComponent } from './partner/partner.component';
     AppComponent,
     routingComponents,
     PartnerComponent,
+    ServiceComponent,
 
 
   ],
